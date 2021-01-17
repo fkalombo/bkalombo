@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="~/favicon.ico">
 
     <link rel="stylesheet" href="~/css/bootstrap.css">
-    <link rel="stylesheet" href="~/css/normalize.css">
+    <link rel="stylesheet" href="~/css/normalize.css">    
     <link rel="stylesheet" href="~/css/transition-animations.css">
     <link rel="stylesheet" href="~/css/owl.carousel.css">
     <link rel="stylesheet" href="~/css/magnific-popup.css">
@@ -105,6 +105,41 @@
             <div class="pt-wrapper">
                 <!-- Subpages -->
                 <div class="subpages">
+
+
+
+                    <!-- Home Subpage -->
+                    <section class="pt-page pt-page-1 section-with-bg section-paddings-0" style="background-image: url(images/home_page_bg_2.jpg);" data-id="home">
+                        <div class="home-page-block-bg">
+                            <div class="mask"></div>
+                        </div>
+                        <div class="home-page-block">
+                            <div class="v-align">
+                                <h2>Bondo Kalombo</h2>
+                                <div id="rotate" class="text-rotate">
+                                    <div>
+                                        <p class="home-page-description">Software Developer</p>
+                                    </div>
+                                    <div>
+                                        <p class="home-page-description">Backend-developer</p>
+                                    </div>
+                                </div>
+
+                                <div class="block end" style="text-align: center">
+                                    <ul class="info-list">
+                                        <li><span class="title">Age</span><span class="value"> @ViewData["age"]</span></li>
+                                        <li><span class="title">Location</span><span class="value">Johannesburg, South Africa</span></li>
+                                        <li><span class="title">e-mail</span><span class="value">bfkalombo@gmail.com</span></li>
+                                        <li><span class="title">Phone</span><span class="value">(+27) 074 920 4971</span></li>
+                                        <li><span class="title">Freelance</span><span class="value available">Available</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End of Home Subpage -->
+
+
                     @RenderBody()
                 </div>
             </div>
@@ -112,18 +147,18 @@
         </div>
         <!-- /Main Content -->
     </div>
-            
 
-            <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.html"></script>
-            <script src="~/js/bootstrap.min.js"></script>
-            <script src="~/js/page-transition.js"></script>
-            <script src="~/js/imagesloaded.pkgd.min.js"></script>
-            <script src="~/js/validator.js"></script>
-            <script src="~/js/jquery.shuffle.min.js"></script>
-            <script src="~/js/masonry.pkgd.min.js"></script>
-            <script src="~/js/owl.carousel.min.js"></script>
-            <script src="~/js/jquery.magnific-popup.min.js"></script>
-            <script src="~/js/jquery.hoverdir.js"></script>
-            <script src="~/js/main.js"></script>
+    <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.html"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/page-transition.js"></script>
+    <script src="~/js/imagesloaded.pkgd.min.js"></script>
+    <script src="~/js/validator.js"></script>
+    <script src="~/js/jquery.shuffle.min.js"></script>
+    <script src="~/js/masonry.pkgd.min.js"></script>
+    <script src="~/js/owl.carousel.min.js"></script>
+    <script src="~/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/js/jquery.hoverdir.js"></script>
+    <script src="~/js/main.js"></script>
+    @RenderSection("Scripts", required: false)
 </body>
 </html>

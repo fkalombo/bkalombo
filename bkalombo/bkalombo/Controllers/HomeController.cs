@@ -20,6 +20,8 @@ namespace bkalombo.Controllers
 
         public IActionResult Index()
         {
+            int age = DateTime.Now.Year - 1991;
+            ViewData["age"] = age;
             return View();
         }
 

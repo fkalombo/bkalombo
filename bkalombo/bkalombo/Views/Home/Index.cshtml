@@ -1,9 +1,35 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
-    Layout = "_PageLayout";
+    Layout = "~/Views/Shared/_PageLayout.cshtml";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!-- Home Subpage -->
+<section class="pt-page pt-page-1 section-with-bg section-paddings-0" style="background-image: url(images/home_page_bg_2.jpg);" data-id="home">
+    <div class="home-page-block-bg">
+        <div class="mask"></div>
+    </div>
+    <div class="home-page-block">
+        <div class="v-align">
+            <h2>Bondo Kalombo</h2>
+            <div id="rotate" class="text-rotate">
+                <div>
+                    <p class="home-page-description">Software Developer</p>
+                </div>
+                <div>
+                    <p class="home-page-description">Backend-developer</p>
+                </div>
+            </div>
+
+            <div class="block end" style="text-align: center">
+                <ul class="info-list">
+                    <li><span class="title">Age</span><span class="value"> @ViewData["age"]</span></li>
+                    <li><span class="title">Location</span><span class="value">Johannesburg, South Africa</span></li>
+                    <li><span class="title">e-mail</span><span class="value">bfkalombo@gmail.com</span></li>
+                    <li><span class="title">Phone</span><span class="value">(+27) 074 920 4971</span></li>
+                    <li><span class="title">Freelance</span><span class="value available">Available</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Home Subpage -->
